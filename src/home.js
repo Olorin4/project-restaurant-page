@@ -1,6 +1,7 @@
+// This module creates and appends the respective content to the content div.
+
 import FoodImage from './assets/food.jpg';
 
-// Function to create and return the Home content
 export function loadHome() {
     const homeDiv = document.createElement('div');
     

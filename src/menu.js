@@ -1,3 +1,5 @@
+// This module creates and appends the respective content to the content div.
+
 export function loadMenu() {
     const menuDiv = document.createElement('div');
     

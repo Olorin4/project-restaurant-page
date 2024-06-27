@@ -1,3 +1,6 @@
+// This file handles the event listeners for the navigation buttons 
+// and switches between the different tabs by loading the respective content.
+
 import './style.css';
 import { addComponentToBody } from './loadPage';
 import { loadHome } from './home';
@@ -11,7 +14,8 @@ document.addEventListener('DOMContentLoaded', () => {
     loadHome();
 
     // Add event listeners to the navigation buttons
-    document.querySelector('nav').addEventListener('click', (event) => {
+  document.querySelector('nav').addEventListener('click', (event) => {
+        // Handles tab=switching logic:
         if (event.target.tagName === 'BUTTON') {
             switch (event.target.textContent) {
                 case 'Home':
